@@ -12,6 +12,11 @@ class TweetsController < ApplicationController
             render json:{error:'something is wrong'}
         end
     end
+
+    def destroy
+        tweet=Tweet.find(params[:id])
+        tweet.destroy
+    end
     
     private
     
