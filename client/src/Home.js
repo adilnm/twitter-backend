@@ -14,6 +14,7 @@ class Home extends Component {
     render() {
         return (
             <div>
+                <h1>Tweets</h1>
                 <ul>
                     {this.props.tweets.map((item, index)=><li id={item.id}>{item.body}<button onClick={this.handleDelete}>X</button></li>)}
                 </ul>

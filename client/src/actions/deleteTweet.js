@@ -1,6 +1,6 @@
 export default function(id){
     return dispatch=>{
-        fetch(`https://localhost:3001/tweets/${id}`, {
+        fetch(`http://localhost:3001/tweets/${id}`, {
             method: 'DELETE',
             credentials: 'include'
         })
