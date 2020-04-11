@@ -1,6 +1,6 @@
 export default function(tweet,ownProps){
     return dispatch=>{
-        fetch('http://localhost:3001/tweets', {
+        fetch('/tweets', {
             method: 'POST',
             credentials: 'include',
             headers: {
