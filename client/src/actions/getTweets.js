@@ -1,6 +1,6 @@
 export default function (){
     return dispatch=>{
-        fetch('/tweets', {
+        fetch('http://localhost:3001/tweets', {
             credentials: 'include'})
             .then(res=>res.json())
             .then(tweets=>{
